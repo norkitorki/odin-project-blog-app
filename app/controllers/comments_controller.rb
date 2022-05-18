@@ -1,6 +1,8 @@
 class CommentsController < ApplicationController
   before_action :find_article
 
+  http_basic_authenticate_with name: 'admin', password: 'password123', only: :destroy
+
   def create
     @comment = @article.comments.create(comment_params)
     redirect_to @article
