@@ -1,11 +1,15 @@
 <header class="header">
-  <div>
+  <div class="main-nav">
     <h1 class="header-heading">Blog</h1>
-    <nav class="header-nav">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">New Article</a></li>
+    <nav>
+      <ul class="header-nav">
+        <%= link_to "Home", "/" %>
+        <%= link_to "Users", "/" %>
       </ul>
     </nav>
+  </div>
+
+  <div class="login-nav">
+    Login
   </div>
 </header>
