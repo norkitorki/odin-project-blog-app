@@ -1,6 +1,8 @@
 class ArticlesController < ApplicationController
   before_action -> { @article = Article.find(params[:id]) }, only: [:show, :edit, :update, :destroy]
 
+  http_basic_authenticate_with name: 'admin', password: 'password123', except: [:index, :show]
+
   def index
     @articles = Article.all
   end
