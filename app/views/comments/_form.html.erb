@@ -3,10 +3,16 @@
     <%= form.label :commenter %><br>
     <%= form.text_field :commenter %>
   </p>
+
   <p>
     <%= form.label :body %><br>
     <%= form.text_area :body %>
   </p>
+
+  <p>
+    <%= render "public/status", form: form %> 
+  </p>
+
   <p>
     <%= form.submit %>
   </p>
