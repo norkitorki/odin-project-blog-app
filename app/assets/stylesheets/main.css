@@ -40,3 +40,36 @@ body {
 .article-wrapper-item .article-title:hover {
   color: #949494;
 }
+
+#article-show {
+  width: 854px;
+  margin: 15px auto;
+  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+}
+
+#article-show h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#article-show .article-body {
+  line-height: 130%;
+}
+
+#article-show .article-body::first-letter {
+  font-size: 130%;
+  font-weight: bold;
+}
+
+#article-show .comments-section {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+
+#article-show .comments-section h2:first-child {
+  font-size: 32px;
+}
