@@ -1,7 +1,7 @@
 <% if !comment.archived? %>
   <p>
     <strong>Commenter:</strong>
-    <%= comment.commenter %>
+    <%# link_to "Destroy Comment", [comment.article, comment], data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
   </p>
 
   <p>
