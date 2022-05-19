@@ -1,17 +1,22 @@
-<h1><%= @article.title %></h1>
+<div id="article-show">
+  <%= image_tag "https://source.unsplash.com/random/854x480", size: "854x480", class: "article-image" %>
 
-<p><%= @article.body %></p>
+  <h1><%= @article.title %></h1>
+  <hr width="100%">
+  <p class="article-body"><%= @article.body %></p>
+
+  <div class="comments-section">
+    <h2>Comments</h2>
+
+    <h2>Add a comment</h2>
+    <%= render "comments/form", article: @article %>
+
+    <%= render @article.comments %>
+  </div>
+</div>
 
 <ul>
   <li><%= link_to "Edit", edit_article_path(@article) %></li>
   <li><%= link_to "Destroy", @article, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %></li>
   <li><%= link_to "Back", articles_path %></li>
 </ul>
-
-<h2>Comments</h2>
-
-<%= render @article.comments %>
-
-<h2>Add a comment</h2>
-
-<%= render "comments/form", article: @article %>
