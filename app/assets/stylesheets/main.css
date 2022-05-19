@@ -2,3 +2,41 @@ body {
   display: grid;
   grid-template-rows: 100px 1fr;
 }
+
+#articles {
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.article-wrapper-item {
+  width: 500px;
+  box-shadow: 2px 2px 8px #999999;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 10px;
+}
+
+.article-wrapper-item > div { position: relative; }
+
+.article-wrapper-item .article-image { border-radius: 4px; }
+
+.article-wrapper-item .article-title {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #000000c2;
+  padding: 10px;
+  position: absolute;
+  bottom: 10px;
+  border-radius: 0 8px 8px 0;
+}
+
+.article-wrapper-item .article-title:hover {
+  color: #949494;
+}
