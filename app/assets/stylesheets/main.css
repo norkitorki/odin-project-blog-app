@@ -26,6 +26,10 @@ button:hover, input[type="submit"]:hover {
   background-color: #204403;
 }
 
+img {
+  border-radius: 4px;
+}
+
 #articles {
   padding: 20px;
   display: flex;
