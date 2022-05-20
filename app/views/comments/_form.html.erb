@@ -1,19 +1,13 @@
-<%= form_with model: [ article, article.comments.build ] do |form| %>
-  <p>
-    <%= form.label :commenter %><br>
-    <%= form.text_field :commenter %>
-  </p>
+<%= form_with model: [ article, article.comments.build ], class: "comment-form" do |form| %>
+  <div>
+    <%= form.label :body %>
+  </div>
 
-  <p>
-    <%= form.label :body %><br>
-    <%= form.text_area :body %>
-  </p>
+  <div>
+    <%= form.text_area :body, cols: "60", rows: "10" %>
+  </div>
 
-  <p>
-    <%= render "public/status", form: form %> 
-  </p>
-
-  <p>
+  <div>
     <%= form.submit %>
-  </p>
+  </div>
 <% end %>
