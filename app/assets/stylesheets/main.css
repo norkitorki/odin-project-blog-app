@@ -97,7 +97,8 @@ img {
 }
 
 #article-show .article-body {
-  line-height: 130%;
+  line-height: 170%;
+  white-space: pre-wrap;
 }
 
 #article-show .article-body::first-letter {
