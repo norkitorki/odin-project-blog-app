@@ -73,12 +73,32 @@ a:hover {
   font-weight: bold;
 }
 
-#article-show .comments-section {
+#article-show .comment-section {
   display: flex;
-  flex-flow: column nowrap;
-  gap: 10px;
+  flex-direction: column;
+  gap: 20px;
 }
 
-#article-show .comments-section h2:first-child {
+#article-show .comment-section h2:first-child {
   font-size: 32px;
+}
+
+#article-show .comment-section .author {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#article-show .comment-section .delete-comment {
+  color: #a00000;
+  padding-left: 5px;
+}
+
+#article-show .comment-section .comment-body {
+  line-height: 150%;
+  width: 80%;
+  word-wrap: break-word;
+}
+
+#article-show .comment-section .comment-body > p {
+  font-size: 16px;
 }
