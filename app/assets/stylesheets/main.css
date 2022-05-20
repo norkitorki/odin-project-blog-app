@@ -47,9 +47,7 @@ img {
   row-gap: 10px;
 }
 
-.article-wrapper-item > div { position: relative; }
-
-.article-wrapper-item .article-image { border-radius: 4px; }
+.article-wrapper-item .article-image { position: relative; }
 
 .article-wrapper-item .article-title {
   display: block;
