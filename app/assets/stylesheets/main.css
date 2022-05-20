@@ -72,6 +72,16 @@ img {
   text-overflow: ellipsis;
 }
 
+.article-wrapper-item .article-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-wrapper-item .article-footer .button_to {
+  font-size: 14px;
+}
+
 #article-show {
   width: 854px;
   margin: 15px auto;
