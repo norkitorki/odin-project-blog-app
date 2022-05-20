@@ -66,6 +66,12 @@ img {
   color: #949494;
 }
 
+.article-wrapper-item .article-body {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 #article-show {
   width: 854px;
   margin: 15px auto;
