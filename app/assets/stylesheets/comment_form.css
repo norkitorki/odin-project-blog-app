@@ -14,3 +14,5 @@
   border-radius: 8px;
   padding: 5px;
 }
+
+.comment-form input[type="submit"] { font-size: 18px; }
