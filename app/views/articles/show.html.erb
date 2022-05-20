@@ -5,13 +5,23 @@
   <hr width="100%">
   <p class="article-body"><%= @article.body %></p>
 
-  <div class="comments-section">
+  <div class="comment-section">
     <h2>Comments</h2>
 
     <h2>Add a comment</h2>
     <%= render "comments/form", article: @article %>
 
-    <%= render @article.comments %>
+    <% @article.comments.reverse.each do |comment| %>
+      <p>
+        <strong class="author"><%= comment.commenter %></strong>
+        <%= distance_of_time_in_words(comment.created_at.to_i, Time.now.utc.to_i) %> ago
+        <%= link_to "Delete", [comment.article, comment], data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "delete-comment" %>
+      </p>
+
+      <div class="comment-body">
+        <p><%= comment.body %></p>
+      </div>
+    <% end %>
   </div>
 </div>
 
