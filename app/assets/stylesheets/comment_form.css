@@ -1,0 +1,16 @@
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.comment-form label {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.comment-form textarea {
+  border: 2px solid #01071d;
+  border-radius: 8px;
+  padding: 5px;
+}
