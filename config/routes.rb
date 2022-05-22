@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   root "articles#index"
 
   resources :articles do
-    resources :comments, :tags
+    resources :comments
   end
+
+  resources :tags
 end
