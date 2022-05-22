@@ -1,0 +1,49 @@
+.blog-form {
+  max-width: 500px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 25px;
+}
+
+.blog-form .form-heading {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+.blog-form form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 15px;
+  font-size: 110%;
+}
+
+.blog-form label {
+  display: block;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.blog-form input[type="text"] {
+  width: 50%;
+  padding: 5px 8px 5px 8px;
+  border: 3px solid #0d2008;
+  border-radius: 8px;
+}
+
+.blog-form textarea {
+  border: 3px solid #0d2008;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.blog-form input[type="submit"] { width: min-content; }
+
+.blog-form .error-message {
+  margin-top: 2px;
+  width: max-content;
+  padding: 5px;
+  color: #ffffff;
+  font-size: 12px;
+  background-color: #940000;
+  border-radius: 8px;
+}
