@@ -1,5 +1,9 @@
-<h1>Edit Article</h1>
-
 <div class="blog-form">
+  <h1 class="form-heading">Edit Article</h1>
+
   <%= render "form", article: @article %>
 </div>
+
+<ul id="footer-nav">
+  <li><%= link_to "Back", @article %></li>
+</ul>
