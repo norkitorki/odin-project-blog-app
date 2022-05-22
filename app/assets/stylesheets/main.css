@@ -4,6 +4,8 @@ body {
   grid-template-rows: 100px 1fr;
 }
 
+main { padding: 20px; }
+
 a {
   text-decoration: none;
   color: inherit;
