@@ -11,9 +11,7 @@ a {
   color: inherit;
 }
 
-a:hover {
-  text-decoration: underline;
-}
+a:hover { text-decoration: underline; }
 
 button, input[type="submit"] {
   font-size: inherit;
@@ -25,13 +23,9 @@ button, input[type="submit"] {
   border-radius: 8px;
 }
 
-button:hover, input[type="submit"]:hover {
-  background-color: #204403;
-}
+button:hover, input[type="submit"]:hover { background-color: #204403; }
 
-img {
-  border-radius: 4px;
-}
+img { border-radius: 4px; }
 
 .header {
   padding: 20px;
@@ -86,9 +80,7 @@ img {
   border-radius: 0 8px 8px 0;
 }
 
-.article-wrapper-item .article-title:hover {
-  color: #949494;
-}
+.article-wrapper-item .article-title:hover { color: #949494; }
 
 .article-wrapper-item .article-body {
   white-space: nowrap;
@@ -107,9 +99,7 @@ img {
   align-items: center;
 }
 
-.article-wrapper-item .article-footer .button_to {
-  font-size: 14px;
-}
+.article-wrapper-item .article-footer .button_to { font-size: 14px; }
 
 #article-show {
   width: 854px;
@@ -141,9 +131,7 @@ img {
   gap: 20px;
 }
 
-#article-show .comment-section h2:first-child {
-  font-size: 32px;
-}
+#article-show .comment-section h2:first-child { font-size: 32px; }
 
 #article-show .comment-section .author {
   font-size: 18px;
@@ -161,6 +149,4 @@ img {
   word-wrap: break-word;
 }
 
-#article-show .comment-section .comment-body > p {
-  font-size: 16px;
-}
+#article-show .comment-section .comment-body > p { font-size: 16px; }
