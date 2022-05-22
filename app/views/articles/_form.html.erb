@@ -3,15 +3,15 @@
     <%= form.label :title %><br>
     <%= form.text_field :title %>
     <% article.errors.full_messages_for(:title).each do |message| %>
-      <div><%= message %></div>
+      <div class="error-message"><%= message %></div>
     <% end %>
   </div>
 
   <div>
     <%= form.label :body %><br>
-    <%= form.text_area :body %>
+    <%= form.text_area :body, cols: "80", rows: "20" %>
     <% article.errors.full_messages_for(:body).each do |message| %>
-      <div><%= message %></div>
+      <div class="error-message"><%= message %></div>
     <% end %>
   </div>
 
