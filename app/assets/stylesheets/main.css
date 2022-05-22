@@ -96,6 +96,11 @@ img {
   text-overflow: ellipsis;
 }
 
+.article-wrapper-item .article-tags a {
+  font-size: 80%;
+  font-weight: bold;
+}
+
 .article-wrapper-item .article-footer {
   display: flex;
   justify-content: space-between;
