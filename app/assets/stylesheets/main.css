@@ -1,4 +1,5 @@
 body {
+  font-family: sans-serif, Verdana, Geneva, Tahoma;
   display: grid;
   grid-template-rows: 100px 1fr;
 }
