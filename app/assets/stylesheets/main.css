@@ -56,7 +56,6 @@ img {
 .header-nav li { display: inline-block; }
 
 #articles {
-  padding: 20px;
   display: flex;
   flex-flow: row wrap;
   gap: 20px;
