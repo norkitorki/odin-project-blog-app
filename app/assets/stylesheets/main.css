@@ -150,3 +150,19 @@ img { border-radius: 4px; }
 }
 
 #article-show .comment-section .comment-body > p { font-size: 16px; }
+
+#footer-nav {
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 8px;
+  width: max-content;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 8px 5px 3px 5px;
+  background-color: #0d2008f1;
+  border-radius: 8px 8px 0 0;
+}
