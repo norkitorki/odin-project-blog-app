@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
-
+    update_tags
     if @article.save
       redirect_to @article
     else
@@ -28,6 +28,7 @@ class ArticlesController < ApplicationController
   end
 
   def update
+    update_tags
     if @article.update(article_params)
       redirect_to @article
     else
@@ -42,6 +43,14 @@ class ArticlesController < ApplicationController
   end
 
   private
+
+  def update_tags
+    @article.tags.clear
+    article_params[:article_tags].split(",").each do |n|
+      n.strip!
+      @article.tags << (Tag.any? { |t| t.name == n } ? Tag.where(name: n) : Tag.create(name: n))
+    end
+  end
 
   def article_params
     params.require(:article).permit(:title, :body, :status, :article_tags)
