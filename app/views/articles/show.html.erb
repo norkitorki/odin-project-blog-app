@@ -2,6 +2,14 @@
   <%= image_tag "https://source.unsplash.com/random/854x480", size: "854x480", class: "article-image" %>
 
   <h1><%= @article.title %></h1>
+
+  <div class="article-tags">
+    <span>Tags:</span>
+    <% @article.tags.each do |tag| %>
+      <%= link_to tag.name, tag %>
+    <% end %>
+  </div>
+
   <hr width="100%">
   <p class="article-body"><%= @article.body %></p>
 
