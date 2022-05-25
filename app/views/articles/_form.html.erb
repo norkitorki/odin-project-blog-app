@@ -16,6 +16,12 @@
   </div>
 
   <div>
+    <%= form.label :article_tags, "Tags" %><br>
+    <%= form.text_field :article_tags, value: article.tags.map(&:name).join(",") %>
+    <p class="article-tags-instruction">Comma seperated list of tags. For Example: <span>ruby,rails</span></p>
+  </div>
+
+  <div>
     <%= render "public/status", form: form %>
   </div>
 
