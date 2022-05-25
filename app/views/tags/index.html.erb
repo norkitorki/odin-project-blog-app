@@ -1,0 +1,10 @@
+<ul>
+  <% @tags.sort_by(&:name).each do |tag| %>
+    <li><%= link_to tag.name, tag %></li><br>
+  <% end %>
+</ul>
+
+<ul id="footer-nav">
+  <li><%= link_to "Back", root_path %></li>
+</ul>
+  

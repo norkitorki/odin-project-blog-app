@@ -1,5 +1,10 @@
-<h1 class="tag-headline"><%= @tag.name %></h1>
+<h1 class="tag-show-heading"><%= @tag.name %></h1>
 
 <div id="articles">
-  <%= render partial: "articles/article", collection: @articles %>
+  <%= render partial: "articles/article", collection: @tag.articles %>
 </div>
+
+<ul id="footer-nav">
+  <li><%= link_to "Back", root_path %></li>
+  <li><%= link_to "Destroy", @tag, data: { turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+</ul>
