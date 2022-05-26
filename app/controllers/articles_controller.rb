@@ -46,7 +46,7 @@ class ArticlesController < ApplicationController
 
   def update_tags
     @article.tags.clear
-    article_params[:article_tags].split(",").each do |n|
+    article_params[:article_tags].split(",").uniq.each do |n|
       n.strip!
       @article.tags << (Tag.any? { |t| t.name == n } ? Tag.where(name: n) : Tag.create(name: n))
     end
