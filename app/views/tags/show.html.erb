@@ -4,7 +4,7 @@
   <%= render partial: "articles/article", collection: @tag.articles %>
 </div>
 
-<ul id="fixed--nav">
+<ul id="fixed-nav">
   <li><%= link_to "Back", root_path %></li>
   <li><%= link_to "Destroy", @tag, data: { turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
 </ul>
