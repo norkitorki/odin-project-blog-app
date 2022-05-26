@@ -3,6 +3,10 @@
 
   <h1><%= @article.title %></h1>
 
+  <hr width="100%">
+  
+  <p class="article-body"><%= @article.body %></p>
+
   <% if @article.tags.any? %>
     <div class="article-tags">
       <span>Tags:</span>
@@ -12,14 +16,8 @@
     </div>
   <% end %>
 
-  <hr width="100%">
-  
-  <p class="article-body"><%= @article.body %></p>
-
   <div class="comment-section">
     <h2>Comments</h2>
-
-    <h2>Add a comment</h2>
 
     <div class="blog-form">
       <%= render "comments/form", article: @article %>
