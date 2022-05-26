@@ -85,13 +85,13 @@ img { border-radius: 4px; }
 
 .article-wrapper-item .article-title:hover { color: #949494; }
 
-.article-wrapper-item .article-body {
+.article-wrapper-item .article-body, .article-wrapper-item .article-tags {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.article-wrapper-item .article-tags a {
+.article-tags a {
   font-size: 80%;
   font-weight: bold;
 }
