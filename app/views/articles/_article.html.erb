@@ -1,4 +1,4 @@
-<% if !article.archived? %>
+<% if !article.private? %>
   <div class="article-wrapper-item">
     <div class="article-image">
       <%= image_tag "https://source.unsplash.com/random/500x260?v=#{article_counter}", size: "500x260" %>
