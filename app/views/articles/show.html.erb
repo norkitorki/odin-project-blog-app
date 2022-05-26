@@ -3,14 +3,17 @@
 
   <h1><%= @article.title %></h1>
 
-  <div class="article-tags">
-    <span>Tags:</span>
-    <% @article.tags.each do |tag| %>
-      <%= link_to tag.name, tag %>
-    <% end %>
-  </div>
+  <% if @article.tags.any? %>
+    <div class="article-tags">
+      <span>Tags:</span>
+      <% @article.tags.each do |tag| %>
+        <%= link_to tag.name, tag %>
+      <% end %>
+    </div>
+  <% end %>
 
   <hr width="100%">
+  
   <p class="article-body"><%= @article.body %></p>
 
   <div class="comment-section">
