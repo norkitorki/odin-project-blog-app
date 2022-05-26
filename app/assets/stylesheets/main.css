@@ -156,6 +156,13 @@ img { border-radius: 4px; }
   margin-bottom: 20px;
 }
 
+.article-tags-instruction {
+  font-size: 13px;
+  padding-top: 2px;
+}
+
+.article-tags-instruction span { font-weight: bold; }
+
   position: fixed;
   bottom: 0px;
   display: flex;
