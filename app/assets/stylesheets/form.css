@@ -7,7 +7,7 @@
 
 .blog-form .form-heading {
   font-size: 36px;
-  font-weight: 900;
+  font-weight: bolder;
 }
 
 .blog-form form {
@@ -20,7 +20,7 @@
 .blog-form label {
   display: block;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .blog-form input[type="text"] {
