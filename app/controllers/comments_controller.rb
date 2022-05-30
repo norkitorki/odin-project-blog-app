@@ -4,8 +4,13 @@ class CommentsController < ApplicationController
   http_basic_authenticate_with name: 'admin', password: 'password123', only: :destroy
 
   def create
-    @comment = @article.comments.create(comment_params)
-    redirect_to @article
+    @comment = @article.comments.new(comment_params)
+
+    if @comment.save
+      redirect_to @article
+    else
+      render "articles/show", status: :unprocessable_entity
+    end
   end
 
   def destroy
