@@ -17,7 +17,7 @@
 
   <div>
     <%= form.label :article_tags, "Tags" %><br>
-    <%= form.text_field :article_tags, value: article.tags.map(&:name).join(","), readonly: true  %>
+    <%= form.text_field :article_tags, value: article.tags.map(&:name).join(","), readonly: true %>
     <p class="article-tags-instruction">Comma seperated list of tags. For Example: <span>ruby,rails</span></p>
   </div>
 
