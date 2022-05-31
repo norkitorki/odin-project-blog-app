@@ -1,7 +1,7 @@
 <%= form_with model: article do |form| %>
   <div>
     <%= form.label :title %><br>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, readonly: true %>
     <% article.errors.full_messages_for(:title).each do |message| %>
       <div class="error-message"><%= message %></div>
     <% end %>
@@ -9,7 +9,7 @@
 
   <div>
     <%= form.label :body %><br>
-    <%= form.text_area :body, cols: "80", rows: "20" %>
+    <%= form.text_area :body, cols: "80", rows: "20", readonly: true %>
     <% article.errors.full_messages_for(:body).each do |message| %>
       <div class="error-message"><%= message %></div>
     <% end %>
@@ -17,7 +17,7 @@
 
   <div>
     <%= form.label :article_tags, "Tags" %><br>
-    <%= form.text_field :article_tags, value: article.tags.map(&:name).join(",") %>
+    <%= form.text_field :article_tags, value: article.tags.map(&:name).join(","), readonly: true %>
     <p class="article-tags-instruction">Comma seperated list of tags. For Example: <span>ruby,rails</span></p>
   </div>
 
